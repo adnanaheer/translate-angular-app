@@ -1,0 +1,9 @@
+<div>
+  <label>Enter English:</label>
+  <input type="text" class="input" (input)="text = $event.target.value" />
+  <button class="button" (click)="submit()">Tranlate!</button>
+
+  <h1>{{ translatedText }}</h1>
+</div>
+
+<router-outlet></router-outlet>
